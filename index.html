@@ -114,7 +114,11 @@
             <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 <!-- 评价卡片1 - 纯图片展示 -->
                 <div class="w-full">
-                    <img src="./tupian/1.png" class="w-full h-auto object-contain rounded-lg" alt="客户评价1">
+                    <img src="tupian/1.png" class="w-full h-auto object-contain rounded-lg" alt="客户评价1" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                    <div style="display:none; padding:20px; text-align:center; background:#f0f0f0; border-radius:8px;">
+                        <p style="color:#666;">图片加载失败，请检查文件路径</p>
+                        <p style="color:#999; font-size:12px;">路径: tupian/1.png</p>
+                    </div>
                 </div>
 
                 <!-- 评价卡片2 - 纯图片展示 -->
